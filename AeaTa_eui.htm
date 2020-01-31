@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>에브리타임</title>
+    <style>
+        body{       
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: left;
+            color: #4c4c4c;
+        }
+        ul{
+            list-style: none;
+            padding-inline-start: 0px;
+        }
+        #univsrh{
+            width: 230px;
+            height: 40px;
+            border:none;
+        }
+        .graywroten{
+            color: gray;
+            font-size: small;
+        }
+        nav>.logoLS{
+            position:fixed;
+            top: 0;
+            padding: 40px 15px 40px 15px;
+            z-index: 11;
+            height: 270px;
+            width: 300px;
+            box-sizing: border-box;
+            border: 0.5px  solid #999999;
+        }
+        #login{
+            display: block;
+            line-height: 40px;
+            box-sizing: border-box;
+            font-size: 14px;
+            text-align: center;
+            width: 270px;
+            height: 40px;
+            border: 0.2px solid #999999;
+            background-color: #ffffff;
+            margin-bottom: 5px;
+        }
+        #signup{
+            display: block;
+            line-height: 40px;
+            box-sizing: border-box;
+            font-size: 14px;
+            text-align: center;
+            width: 270px;
+            height: 40px;
+            border: 0.2px solid #999999;
+            margin-bottom: 5px;
+            background-color: #ca6c80;
+            color: white;
+        }
+        #article{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            border: 0.1px solid gray;
+        }
+        #idnpw{
+            padding: 5px 5px 0 5px;
+            font-size: x-small;
+            hyphens:none;
+            color: #887070;
+            margin-right: 0;
+        }
+        .srh{
+            height: auto;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            border: 0.5px  solid #999999;
+        }
+        .insrh{
+            margin-top: 5px;
+            border: 0.2px solid #999999;
+            height: 41px;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+        }
+        .graywroten>li{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 0.2px  solid #cbcccc;
+            font-size: 15px;
+            text-align: inherit;
+        }
+        .page1{
+            width: 100%;
+        }
+        footer{
+            height: 20px;
+            margin: 0;
+            text-align: center;
+        }
+        footer>ul>li{
+            list-style-type: none;
+            display: inline;
+            font-size: small;
+        }
+        #logo{
+            display: block;
+            height: 30px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        #srcicon{
+            height: 30px;
+        }
+        .page0{
+            position: relative;
+            height: 100%;
+        }
+        #etaphone{
+            position: relative; 
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>           
+            <div class="logoLS">           
+                <li  id="logo"><img src="logo.png" ></li>
+                <li><button type="button" id="login"><strong>로그인</strong></button></li>
+                <li><button type="button" id="signup"><strong>에브리타임 회원가입</strong></button></li>
+                <li><a href="#" id="idnpw">아이디/비밀번호 찾기</a></li>
+            </div> 
+        </ul>
+        <form class="srh">
+            <ul>
+                <li><strong>우리학교 커뮤니티 둘러보기</strong></li>
+                <li class="insrh"><input type="search" placeholder="찾으시는 캠퍼스를 검색하세요." id="univsrh"
+                    autocomplete="off"><a href="#"><img src="src.png" id="srcicon"></a></li>
+            </ul>
+        </form>
+        <div class="univ">
+            <ul>
+                <div class="graywroten">
+                    <li>경희대46,160명</li>
+                    <li>연세대 신촌캠39,794명</li>
+                    <li>중앙대39,125명</li>
+                    <li>성균관대36,648명</li>
+                    <li>경북대35,707명</li>
+                    <li>고려대 서울캠34,887명</li>
+                    <li>단국대32,171명</li>
+                    <li>영남대31,118명</li>
+                    <li>계명대29,796명</li>
+                    <li>한양대 서울캠29,697명</li>
+                    <li>부산대29,348명</li>
+                    <li>전남대28,719명</li>
+                    <li>한국외대28,178명</li>
+                    <li>강원대28,071명</li>
+                    <li>전북대27,807명</li>
+                    <li>인하대27,355명</li>
+                    <li>서울대26,872명</li>
+                    <li>건국대 서울캠26,818명</li>
+                    <li>이화여대26,811명</li>
+                    <li>동아대26,195명</li>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <article>
+        <div>
+            <div class="page0">
+                <img src="pagepink.png" 1.png" id="etaphone">
+            </div>
+            <img src="page2_.png" class="page1">
+            <img src="img3.png" class="page1">
+        </div>
+        <footer>
+            <ul class="footli">
+                <li>이용약관</li>
+                <li>개인정보처리방침</li>
+                <li> 문의하기</li>
+                <li><strong>&copy;에브리타임</strong></li>
+            </ul>
+        </footer>
+    </article>
+
+</body>
+
+</html>
